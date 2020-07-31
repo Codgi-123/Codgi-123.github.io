@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="https://codgi.xin/"/>
-  <updated>2020-07-31T08:40:40.656Z</updated>
+  <updated>2020-07-28T07:51:58.242Z</updated>
   <id>https://codgi.xin/</id>
   
   <author>
@@ -15,21 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>schedule</title>
-    <link href="https://codgi.xin/article/schedule/"/>
-    <id>https://codgi.xin/article/schedule/</id>
-    <published>2020-07-31T08:40:40.656Z</published>
-    <updated>2020-07-31T08:40:40.656Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>我也要和TCP握手</title>
