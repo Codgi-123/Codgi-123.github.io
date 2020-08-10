@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>入手一台Raspberry Pi 4B</title>
+      <link href="/article/RaspberryPi/"/>
+      <url>/article/RaspberryPi/</url>
+      
+        <content type="html"><![CDATA[<p>近段时间想学学Linux方面的东西，但是Windows上的WSL我觉得虽然方便，但是用着没有单独Linux<br />那么畅快，所以入手Raspberry Pi来拿玩，但愿不要太快就吃灰了。</p><p>这篇记录下Raspberry Pi的踩坑记录（md）</p><a id="more"></a><h1 id="raspberry-pi"><a class="markdownIt-Anchor" href="#raspberry-pi"></a> Raspberry Pi</h1><p><s>待更新，咕咕咕</s></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我也要和TCP握手</title>
       <link href="/article/tcp/"/>
       <url>/article/tcp/</url>
