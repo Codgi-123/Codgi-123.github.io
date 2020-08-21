@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="https://codgi.xin/"/>
-  <updated>2020-08-21T16:56:01.705Z</updated>
+  <updated>2020-08-21T17:05:37.239Z</updated>
   <id>https://codgi.xin/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://codgi.xin/article/lights/"/>
     <id>https://codgi.xin/article/lights/</id>
     <published>2020-08-21T16:36:52.613Z</published>
-    <updated>2020-08-21T16:56:01.705Z</updated>
+    <updated>2020-08-21T17:05:37.239Z</updated>
     
-    <content type="html"><![CDATA[<p>亮度无法调节问题是出在这台笔记本电脑上的，以前都是重新装个驱动就好了，以为这次是中邪了，结果意外刷到了一篇文章，刚好解决了这个问题，<br />wdnmd我的眼睛有救了</p><a id="more"></a><h2 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景</h2><p>我拿到这台电脑使用了很长一段时间都是没有问题的，晚上打游戏都是降低了亮度玩，结果有一次晚上发现无法调节亮度，去找了很多方法都没有成功，导致我的笔记本屏幕满亮度使用了起码有半年多的时间(我的眼睛呜呜呜)</p><h2 id="尝试过的解决办法"><a class="markdownIt-Anchor" href="#尝试过的解决办法"></a> 尝试过的解决办法</h2><ul><li>重装系统  (注：后面又用不能调节了)</li><li>卸载显卡驱动程序并重装</li><li>更新驱动程序</li></ul><p><strong>除了重装系统后一段时间内能正常调节，其他方法均无效</strong></p><h2 id="问题根源"><a class="markdownIt-Anchor" href="#问题根源"></a> 问题根源</h2><p><strong>远程连接软件<a href="https://www.teamviewer.com/" target="_blank" rel="noopener">TeamViewer</a></strong></p><p>无意间刷CSDN刷到的一篇<a href="https://blog.csdn.net/weixin_40930415/article/details/104403071" target="_blank" rel="noopener">博文</a>发现的</p><h2 id="解决方案"><a class="markdownIt-Anchor" href="#解决方案"></a> 解决方案</h2><p>那篇博文里面提到了TeamViewer可能会导致亮度调节失效，于是我尝试了去设备管理器里将<code>监视器</code>下的<code>Generic Monitor (OrayDPMS)</code>卸载，然后检测硬件改动后他又回来了…<br />又查看了几个方法，去TeamViewer内将驱动卸载，结果提示我没有安装(exm?) 那对不住了，找到元凶了还不能让我干掉你，那我就把你卸了(/滑稽)</p><p>然后尝试<code>Fn+F11/F12</code></p><p><strong>完美解决问题 Nice！ 我的眼睛有救了</strong></p><h2 id="后记"><a class="markdownIt-Anchor" href="#后记"></a> 后记</h2><p>可能你会问我是怎么在晚上顶着高亮度坚持下来的<br />实在没办法我找到了一个软件：<a href="https://justgetflux.com/" target="_blank" rel="noopener">f.lux</a><br />他能设置一天内你屏幕的色温，我把晚上的色温调得很暖，减少了眼睛了压力(没有直接降低亮度来的爽，现在两个结合起来更舒服了)</p>]]></content>
+    <content type="html"><![CDATA[<p>亮度无法调节问题是出在这台笔记本电脑上的，以前都是重新装个驱动就好了，以为这次是中邪了，结果意外刷到了一篇文章，刚好解决了这个问题<br />wdnmd我的眼睛有救了</p><a id="more"></a><h2 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景</h2><p>我拿到这台电脑使用了很长一段时间都是没有问题的，晚上打游戏都是降低了亮度玩，结果有一次晚上发现无法调节亮度，去找了很多方法都没有成功，导致我的笔记本屏幕满亮度使用了起码有半年多的时间(我的眼睛呜呜呜)</p><h2 id="尝试过的解决办法"><a class="markdownIt-Anchor" href="#尝试过的解决办法"></a> 尝试过的解决办法</h2><ul><li>重装系统  (注：后面又用不能调节了)</li><li>卸载显卡驱动程序并重装</li><li>更新驱动程序</li></ul><p><strong>除了重装系统后一段时间内能正常调节，其他方法均无效</strong></p><h2 id="问题根源"><a class="markdownIt-Anchor" href="#问题根源"></a> 问题根源</h2><p><strong>远程连接软件<a href="https://www.teamviewer.com/" target="_blank" rel="noopener">TeamViewer</a></strong></p><p>无意间刷CSDN刷到的一篇<a href="https://blog.csdn.net/weixin_40930415/article/details/104403071" target="_blank" rel="noopener">博文</a>发现的</p><h2 id="解决方案"><a class="markdownIt-Anchor" href="#解决方案"></a> 解决方案</h2><p>那篇博文里面提到了TeamViewer可能会导致亮度调节失效，于是我尝试了去设备管理器里将<code>监视器</code>下的<code>Generic Monitor (OrayDPMS)</code>卸载，然后检测硬件改动后他又回来了…<br />又查看了几个方法，去TeamViewer内将驱动卸载，结果提示我没有安装(exm?) 那对不住了，找到元凶了还不能让我干掉你，那我就把你卸了(/滑稽)</p><p>然后尝试<code>Fn+F11/F12</code></p><p><strong>完美解决问题 Nice！ 我的眼睛有救了</strong></p><h2 id="后记"><a class="markdownIt-Anchor" href="#后记"></a> 后记</h2><p>可能你会问我是怎么在晚上顶着高亮度坚持下来的<br />实在没办法我找到了一个软件：<a href="https://justgetflux.com/" target="_blank" rel="noopener">f.lux</a><br />他能设置一天内你屏幕的色温，我把晚上的色温调得很暖，减少了眼睛了压力(没有直接降低亮度来的爽，现在两个结合起来更舒服了)</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;亮度无法调节问题是出在这台笔记本电脑上的，以前都是重新装个驱动就好了，以为这次是中邪了，结果意外刷到了一篇文章，刚好解决了这个问题，&lt;br /&gt;
+      &lt;p&gt;亮度无法调节问题是出在这台笔记本电脑上的，以前都是重新装个驱动就好了，以为这次是中邪了，结果意外刷到了一篇文章，刚好解决了这个问题&lt;br /&gt;
 wdnmd我的眼睛有救了&lt;/p&gt;
     
     </summary>
