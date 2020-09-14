@@ -54,7 +54,7 @@
 </li>
 <li><p>对于顺序结构,采用大O下求和法则</p>
 <ul>
-<li>求和法则：<br>是指若算法的2个部分时间复杂度分别为 $T1(n)=O(f(n))$和 $T2(n)=O(g(n)),则 T1(n)+T2(n)=O(max(f(n), g(n)))$<br>特别地,若$T1(m)=O(f(m)), T2(n)=O(g(n)),则 T1(m)+T2(n)=O(f(m) + g(n))$</li>
+<li>求和法则：<br>是指若算法的2个部分时间复杂度分别为 <code>T1(n)=O(f(n))</code>和 <code>T2(n)=O(g(n))</code>,则 <code>T1(n)+T2(n)=O(max(f(n), g(n)))</code><br>特别地,若<code>T1(m)=O(f(m)), T2(n)=O(g(n))</code>则 <code>T1(m)+T2(n)=O(f(m) + g(n))</code></li>
 </ul>
 </li>
 <li><p>对于条件判断语句，总的时间复杂度等于其中 时间复杂度最大的路径 的时间复杂度</p>
@@ -81,25 +81,36 @@
 <li><p>来几个例子  </p>
 <ol>
 <li><p>如果算法执行所需要的临时空间不随着某个变量n的大小而变化，即此算法空间复杂度为一个常量，可表示为 O(1)，比如：  </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int i &#x3D; 1;</span><br><span class="line">int j &#x3D; 2;</span><br><span class="line">++i;</span><br><span class="line">j++;</span><br><span class="line">int m &#x3D; i + j;</span><br></pre></td></tr></table></figure>
-<p>代码中的 i、j、m 所分配的空间都不随着处理数据量变化，因此它的空间复杂度 S(n) = O(1)</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> j = <span class="number">2</span>;</span><br><span class="line">++i;</span><br><span class="line">j++;</span><br><span class="line"><span class="keyword">int</span> m = i + j;</span><br></pre></td></tr></table></figure>
+<p>代码中的 i、j、m 所分配的空间都不随着处理数据量变化，因此它的空间复杂度 <code>S(n) = O(1)</code></p>
 </li>
 <li><p>空间复杂度 O(n)</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int[] m &#x3D; new int[n]</span><br><span class="line">for(i&#x3D;1; i&lt;&#x3D;n; ++i)&#123;</span><br><span class="line">  j &#x3D; i;</span><br><span class="line">  j++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>第一行new了一个数组出来，这个数据占用的大小为n，这段代码的2~6行，没有再分配新的空间，因此，这段代码的空间复杂度主要在第一行，即 S(n) = O(n)</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span>[] m = <span class="keyword">new</span> <span class="keyword">int</span>[n]</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>; i&lt;=n; ++i)&#123;</span><br><span class="line">  j = i;</span><br><span class="line">  j++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>第一行new了一个数组出来，这个数据占用的大小为n，这段代码的2~6行，没有再分配新的空间，因此，这段代码的空间复杂度主要在第一行，即 <code>S(n) = O(n)</code></p>
 </li>
 </ol>
 </li>
 </ul>
 <hr>
-<h2 id="复述"><a href="#复述" class="headerlink" title="复述"></a>复述</h2><p>X 略</p>
+<h2 id="复述"><a href="#复述" class="headerlink" title="复述"></a>复述</h2><ul>
+<li><p>什么是时间复杂度</p>
+</li>
+<li><p>什么是“算法原地工作”</p>
+</li>
+<li><p>算法和程序的区别</p>
+</li>
+<li><p>衡量程序好坏的标准</p>
+</li>
+<li><p>衡量算法好坏的标准</p>
+</li>
+</ul>
 <hr>
 <h2 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h2><ol>
-<li><p>能不能用程序的执行时间来衡量算法的好坏？<br><em>答：不能，用不同的语言、不同的编译程序、在不同的计算机上运行，效率均不同，不能简单地用程序地执行时间来衡量算法的好坏</em></p>
+<li><p>能不能用程序的执行时间来衡量算法的好坏？<br><strong>答：不能，用不同的语言、不同的编译程序、在不同的计算机上运行，效率均不同，不能简单地用程序地执行时间来衡量算法的好坏</strong></p>
 </li>
-<li><p>时间复杂度越小，算法是不是越好？<br><em>答：不一定越好，算法的好坏不仅仅体现在时间复杂度上，还体现在空间复杂度，时间复杂度越小只代表算法解决问题所花时间的代价小，但是空间复杂度可能会很高，典型用空间换取时间</em></p>
+<li><p>时间复杂度越小，算法是不是越好？<br><strong>答：不一定越好，算法的好坏不仅仅体现在时间复杂度上，还体现在空间复杂度，时间复杂度越小只代表算法解决问题所花时间的代价小，但是空间复杂度可能会很高，典型用空间换取时间</strong></p>
 </li>
-<li><p>下面的希尔顿描述是否是算法？(编程实践)<br>输入一个正整数N，如果是1，就直接输出1；如果是偶数的话就除以2，如果是奇数的话就乘以3再加上1，重复这个过程，最后输出结果<br><em>答：不算，无法证明对于任意的N在执行有限次数后退出程序</em>  </p>
+<li><p>下面的希尔顿描述是否是算法？(编程实践)<br>输入一个正整数N，如果是1，就直接输出1；如果是偶数的话就除以2，如果是奇数的话就乘以3再加上1，重复这个过程，最后输出结果<br><strong>答：不算，无法证明对于任意的N在执行有限次数后退出程序</strong>  </p>
 </li>
 </ol>
 <hr>
