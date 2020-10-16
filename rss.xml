@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="https://codgi.xin/"/>
-  <updated>2020-09-21T12:24:11.513Z</updated>
+  <updated>2020-09-28T13:37:53.563Z</updated>
   <id>https://codgi.xin/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我读大学的第一年</title>
+    <link href="https://codgi.xin/article/firstyear/"/>
+    <id>https://codgi.xin/article/firstyear/</id>
+    <published>2020-09-28T13:01:50.142Z</published>
+    <updated>2020-09-28T13:37:53.563Z</updated>
+    
+    <content type="html"><![CDATA[<p>不得不说时间过得真快啊，待我反应过来的时候就已经是大二老学长了，我在过去的一年内经历了些什么呢<br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不得不说时间过得真快啊，待我反应过来的时候就已经是大二老学长了，我在过去的一年内经历了些什么呢&lt;br&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>数据结构预习-2</title>
