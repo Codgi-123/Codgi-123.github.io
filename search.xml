@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>数据结构复习-树</title>
+      <link href="/article/ds-tree/"/>
+      <url>/article/ds-tree/</url>
+      
+        <content type="html"><![CDATA[<p>临近考试，把PTA里面做过的题拿出来总结归纳复习一下，数据结构挺重要的，不能学成二吊子<br><a id="more"></a></p><h1 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h1><h2 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h2><ul><li><p><strong>二叉树的第i层上最多含有结点数为$2^i−1$</strong></p></li><li><p><strong>在含有n个结点的树中,边数只能是n-1条</strong><br>  树中是不存在环的，对于有N个节点的树，必定是N-1条边</p></li><li><p><strong>叶结点个数等于度为2的结点个数加1</strong><br>  证明：设度数为0、1、2的节点个数分别为X,Y,Z,节点总数为N<br>  有<code>X+Y+Z=N，0*X+1*Y+2*Z=N-1</code>可解得<code>Z=X-1</code></p></li><li><p><strong>哈夫曼树的结点个数不能是偶数</strong><br>  哈夫曼树只有度为0和2的节点。<br>  假设度为0的节点为X，则度为2的节点为X-1；则节点个数为2X-1，始终为奇数</p></li></ul><hr><h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><ul><li><p>对 n 个互不相同的符号进行哈夫曼编码。若生成的哈夫曼树共有 115 个结点，则 n 的值是<code>58</code></p></li><li><p>若将一棵树 T 转化为对应的二叉树 BT，则下列对 BT 的遍历中，其遍历序列与 T 的后根遍历序列相同的是：<code>中序遍历</code></p></li><li><p>一棵二叉树高度为h,所有结点的度或为0，或为2，则这棵二叉树最少<code>2h-1</code>结点</p></li><li><p>在二叉树结点的先序序列，中序序列和后序序列中，所有叶子结点的先后顺序<code>完全相同</code></p></li><li><p>在二叉树的顺序存储结构中（根的下标为1），下标为130的结点一定处于左子树中  </p><ul><li><em>解释：完全二叉树的顺序存储结构中，若根节点从1开始计数，则所有左子树的编号都为偶数，右子树为奇数</em></li></ul></li><li><p>一棵有n个结点的完全二叉树，按层次从上到下，同一层从左到右顺序存储在一维数组A[1..n]中，则二叉树中第i个结点（i从1开始用上述方法编号）的右孩子在数组A中的位置是<code>A[2i+1](2i+1&lt;=n)</code><br>  总结：完全二叉树中第i个节点的左孩子编号为<code>2i</code>，右孩子编号为<code>2i+1</code></p></li></ul><hr><h2 id="一些题型"><a href="#一些题型" class="headerlink" title="一些题型"></a>一些题型</h2><ul><li><p>在三种遍历结果中，取其中两种结果，为满足什么条件时，这两种遍历的结果相同</p><ul><li>解法：把三种遍历的结果写出来，然后看消掉其中哪一个后能够满足一样的结果</li></ul></li><li><p>二叉树性质相关类</p></li><li><p>根据题目算节点个数类</p></li><li><p>已知两个遍历序列，还原二叉树，写出最后一种遍历序列结果</p></li><li><p>哈夫曼树的带权路径长度</p></li><li><p>前缀编码</p></li></ul><hr><h2 id="与二叉树相关的"><a href="#与二叉树相关的" class="headerlink" title="与二叉树相关的"></a>与二叉树相关的</h2><ul><li><p><strong>哈夫曼树：</strong><br>给定N个权值作为N个叶子结点，构造一棵二叉树，若该树的带权路径长度达到最小，称这样的二叉树为最优二叉树，也称为哈夫曼树。哈夫曼树是带权路径长度最短的树，权值较大的结点离根较近。</p></li><li><p><strong>前缀编码</strong><br>对字符集进行编码时，要求字符集中<code>任一字符的编码</code>都不是其它字符的<code>编码的前缀</code></p></li></ul><hr><h2 id="未解决"><a href="#未解决" class="headerlink" title="未解决"></a>未解决</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>已购赛博朋克2077</title>
       <link href="/article/newgame/"/>
       <url>/article/newgame/</url>
