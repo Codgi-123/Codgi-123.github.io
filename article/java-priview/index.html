@@ -147,9 +147,10 @@
 <li>如果想在不创建对象的情况下调用某个方法，则可以通过将这个方法设置为static来实现。</li>
 <li>在静态方法中不可以使用this关键字</li>
 <li>静态方法可以直接通过类名调用，任何的实例也都可以调用</li>
-<li>不能直接访问所属类的实例变量和实例方法<h3 id="访问控制符"><a href="#访问控制符" class="headerlink" title="访问控制符"></a>访问控制符</h3>| 修饰符 | 同类中 | 同一个包 | 子类 | 其他地方 |<br>|:——: |:——: | :——: |:——:| :——: |<br>| <code>private</code> | ✔ | ❌ |❌ | ❌ |<br>| <code>default</code> | ✔ | ✔ | ❌ | ❌ |<br>| <code>protected</code> | ✔ | ✔ | ✔ | ❌ |<br>| <code>public</code> | ✔ | ✔ | ✔ | ✔ |<h3 id="继承的意义和使用方法"><a href="#继承的意义和使用方法" class="headerlink" title="继承的意义和使用方法"></a>继承的意义和使用方法</h3><strong>Java中类之间只允许单一继承</strong>  <h4 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h4></li>
+<li>不能直接访问所属类的实例变量和实例方法<h3 id="访问控制符"><a href="#访问控制符" class="headerlink" title="访问控制符"></a>访问控制符</h3><img src="https://s3.ax1x.com/2020/12/15/rMi7kT.png" alt="访问控制"></li>
 </ul>
-<ol>
+<h3 id="继承的意义和使用方法"><a href="#继承的意义和使用方法" class="headerlink" title="继承的意义和使用方法"></a>继承的意义和使用方法</h3><p><strong>Java中类之间只允许单一继承</strong>  </p>
+<h4 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h4><ol>
 <li><p>在 Java 中通过 <code>extends</code> 关键字可以申明一个类是从另外一个类继承而来的，<code>extends</code> 只能继承一个类，一般形式如  </p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> 父类 </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> 子类 <span class="keyword">extends</span> 父类 </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
