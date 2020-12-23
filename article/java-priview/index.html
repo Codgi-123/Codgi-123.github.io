@@ -190,7 +190,10 @@
 <ul>
 <li><code>private</code> 方法会被认为是<code>final</code>方法</li>
 <li><code>final</code> 变量必须赋值</li>
-<li><code>final</code> 修饰符通常和 <code>static</code> 修饰符一起使用来创建类常量。<h4 id="abstract"><a href="#abstract" class="headerlink" title="abstract"></a><code>abstract</code></h4>abstract 的中文意思是抽象的, 就是这个东西不存在, 也就是不能被直接实例化  </li>
+<li><code>final</code> 修饰符通常和 <code>static</code> 修饰符一起使用来创建类常量。</li>
+</ul>
+<h4 id="abstract"><a href="#abstract" class="headerlink" title="abstract"></a><code>abstract</code></h4><p>  abstract 的中文意思是抽象的, 就是这个东西不存在, 也就是不能被直接实例化  </p>
+<ul>
 <li><code>abstract</code> 可以修饰类，类的方法</li>
 <li>和<code>abstract</code> 有冲突的不能共存的修饰符: <code>private</code> <code>final</code>  <code>static</code> </li>
 </ul>
@@ -294,7 +297,7 @@
 </ul>
 <hr>
 <h2 id="Java图形界面"><a href="#Java图形界面" class="headerlink" title="Java图形界面"></a>Java图形界面</h2><h3 id="Java-GUI介绍"><a href="#Java-GUI介绍" class="headerlink" title="Java GUI介绍"></a>Java GUI介绍</h3><h4 id="AWT-Abstract-Window-Toolkit-："><a href="#AWT-Abstract-Window-Toolkit-：" class="headerlink" title="AWT(Abstract Window Toolkit)："></a>AWT(Abstract Window Toolkit)：</h4><p>  抽象窗口工具包，早期编写图形界面应用程序的包</p>
-<h4 id="Swing"><a href="#Swing" class="headerlink" title="Swing"></a>Swing</h4><p>  Swing：为解决 AWT 存在的问题而新开发的图形界面包。Swing是对AWT的改良和扩展<br>  <strong>AWT和Swing都是java中的包，AWT包的名称是java.awt，Swing包的名称是javax.swing</strong></p>
+<h4 id="Swing"><a href="#Swing" class="headerlink" title="Swing"></a>Swing</h4><p>  Swing：为解决 AWT 存在的问题而新开发的图形界面包。Swing是对AWT的改良和扩展<br>  <strong>AWT和Swing都是java中的包，AWT包的名称是<code>java.awt</code>，Swing包的名称是<code>javax.swing</code></strong></p>
 <h3 id="常用的组件-swing中"><a href="#常用的组件-swing中" class="headerlink" title="常用的组件(swing中)"></a>常用的组件(swing中)</h3><ul>
 <li><strong><code>JLabel</code> 显示一行文字，可带图标</strong></li>
 <li><strong><code>JTextFiel</code> 用户让用户输入一行文字的组件</strong></li>
@@ -308,7 +311,7 @@
 <li>JFrame类是Window类的其中一个子类：通常用于定义一般意义的窗口</li>
 <li>一个JFrame刚被创建后，其初始大小为height=width=0 ，而且是隐藏状态的，所以为了使Frame显示出来，必须在程序中显式地设置一下它的大小<br><strong>注意：<code>setVisible(true);</code>：数据模型已经构造好，允许JVM可以根据数据模型执行paint方法开始画图并显示到屏幕上</strong></li>
 </ul>
-<h3 id="Container类"><a href="#Container类" class="headerlink" title="Container类"></a>Container类</h3><p>Container类是由Component类派生出来的一种特殊类，用来表示各种GUI组件的容器，其主要功能包括</p>
+<h3 id="Container类"><a href="#Container类" class="headerlink" title="Container类"></a>Container类</h3><p><code>Container</code>类是由<code>Component</code>类派生出来的一种特殊类，用来表示各种GUI组件的容器，其主要功能包括</p>
 <ul>
 <li>组件的管理：方法<code>add()</code>可以向其中添加一个组件，<code>remove()</code>删除其中的一个组件。</li>
 <li>布局管理：每个Container类都和一个布局管理器相联，以确定其中组件的布局,通过<code>setLayout()</code>方法设置某种布局方式</li>
