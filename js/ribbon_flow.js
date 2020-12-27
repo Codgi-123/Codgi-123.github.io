@@ -311,14 +311,14 @@
     return Factory
 });
 new Ribbons({
-    colorSaturation: "60%",
-    colorBrightness: "50%",
+    colorSaturation: "80%",
+    colorBrightness: "60%",
     colorAlpha: 0.5,
-    colorCycleSpeed: 5,
+    colorCycleSpeed: 3,
     verticalPosition: "center",
     horizontalSpeed: 200,
-    ribbonCount: 3,
+    ribbonCount: 2,
     strokeSize: 0,
-    parallaxAmount: -0.2,
+    parallaxAmount: -0.01,
     animateSections: true
 });
