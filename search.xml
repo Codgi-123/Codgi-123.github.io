@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>小屋开启PWA了</title>
+      <link href="/article/offline_view/"/>
+      <url>/article/offline_view/</url>
+      
+        <content type="html"><![CDATA[<p>这两天闲来无事，想着有时候理想也能康康上面的博客，把之前想弄的PWA加上了，这篇偷个懒写一下<br><a id="more"></a></p><ul><li>主题使用 <a href="https://molunerfinn.com/" target="_blank" rel="noopener">melody</a>，<a href="https://molunerfinn.com/hexo-theme-melody-doc" target="_blank" rel="noopener">文档在这儿</a></li></ul><h3 id="PWA"><a href="#PWA" class="headerlink" title="PWA"></a>PWA</h3><p><a href="https://web.dev/what-are-pwas/" target="_blank" rel="noopener">什么是PWA</a><br>总结一下就是这些：</p><ol><li>渐进式</li><li>自适应</li><li>连接无关性</li><li>类似应用</li><li>持续更新</li><li>安全</li><li>可发现</li><li>可再互动</li><li>可安装</li><li>可连接</li></ol><h3 id="其实说白了就是"><a href="#其实说白了就是" class="headerlink" title="其实说白了就是"></a>其实说白了就是</h3><p>本站现在访问一次过后可以离线访问啦  </p><p>但是我不知道为啥有几个页面访问不了  </p><p>还有文章里面有图片别问我离线为啥访问不了  </p><p><strong>就这样吧这篇，我要去复习了</strong></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>排序算法</title>
       <link href="/article/ds-sort/"/>
       <url>/article/ds-sort/</url>
