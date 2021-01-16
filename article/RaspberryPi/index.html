@@ -1,1 +1,316 @@
-<!DOCTYPE html><html lang="zh-Hans" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>入手一台Raspberry Pi 4B | Codgi的小屋</title><meta name="author" content="Codgi"><meta name="copyright" content="Codgi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="近段时间想学学Linux方面的东西，但是Windows上的WSL我觉得虽然方便，但是用着没有单独Linux那么畅快，所以入手Raspberry Pi来拿玩，但愿不要太快就吃灰了。"><meta property="og:type" content="article"><meta property="og:title" content="入手一台Raspberry Pi 4B"><meta property="og:url" content="https://codgi.xin/article/RaspberryPi/index.html"><meta property="og:site_name" content="Codgi的小屋"><meta property="og:description" content="近段时间想学学Linux方面的东西，但是Windows上的WSL我觉得虽然方便，但是用着没有单独Linux那么畅快，所以入手Raspberry Pi来拿玩，但愿不要太快就吃灰了。"><meta property="og:locale"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><meta property="article:published_time" content="2020-08-10T03:27:45.242Z"><meta property="article:modified_time" content="2021-01-14T13:22:37.648Z"><meta property="article:author" content="Codgi"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://codgi.xin/article/RaspberryPi/"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="manifest" href="/manifest.json"><link rel="apple-touch-icon" sizes="180x180" href="/image/pwa/16.png"><link rel="icon" type="image/png" sizes="32x32" href="/image/pwa/32.png"><link rel="icon" type="image/png" sizes="16x16" href="/image/pwa/16.png"><link rel="mask-icon" href="/image/pwa/16.svg" color="#5bbad5"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload='this.media="all"'><script>var GLOBAL_CONFIG={root:"/",algolia:void 0,localSearch:{path:"search.xml",languages:{hits_empty:"We didn't find any results for the search: ${query}"}},translate:void 0,noticeOutdate:void 0,highlight:{plugin:"highlighjs",highlightCopy:!0,highlightLang:!0},copy:{success:"Copy successfully",error:"Copy error",noSupport:"The browser does not support"},relativeDate:{homepage:!1,post:!1},runtime:"days",date_suffix:{just:"Just",min:"minutes ago",hour:"hours ago",day:"days ago",month:"months ago"},copyright:void 0,lightbox:"fancybox",Snackbar:void 0,source:{jQuery:"https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js",justifiedGallery:{js:"https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js",css:"https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css"},fancybox:{js:"https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js",css:"https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"}},isPhotoFigcaption:!1,islazyload:!1,isanchor:!1},saveToLocal={set:function(e,t,s){const a=864e5*s,o={value:t,expiry:(new Date).getTime()+a};localStorage.setItem(e,JSON.stringify(o))},get:function(e){const t=localStorage.getItem(e);if(!t)return;const s=JSON.parse(t);if(!((new Date).getTime()>s.expiry))return s.value;localStorage.removeItem(e)}};const getScript=e=>new Promise((t,s)=>{const a=document.createElement("script");a.src=e,a.async=!0,a.onerror=s,a.onload=a.onreadystatechange=function(){const e=this.readyState;e&&"loaded"!==e&&"complete"!==e||(a.onload=a.onreadystatechange=null,t())},document.head.appendChild(a)})</script><script id="config_change">var GLOBAL_CONFIG_SITE={isPost:!0,isHome:!1,isHighlightShrink:!1,isToc:!0,postUpdate:"2021-01-14 21:22:37"}</script><noscript><style>#nav{opacity:1}.justified-gallery img{opacity:1}#post-meta time,#recent-posts time{display:inline!important}</style></noscript><script>!function(){window.activateDarkMode=function(){document.documentElement.setAttribute("data-theme","dark"),null!==document.querySelector('meta[name="theme-color"]')&&document.querySelector('meta[name="theme-color"]').setAttribute("content","#0d0d0d")},window.activateLightMode=function(){document.documentElement.setAttribute("data-theme","light"),null!==document.querySelector('meta[name="theme-color"]')&&document.querySelector('meta[name="theme-color"]').setAttribute("content","#ffffff")};const e=saveToLocal.get("theme");{const t=(new Date).getHours(),o=t<=6||t>=18;void 0===e?o?activateDarkMode():activateLightMode():"light"===e?activateLightMode():activateDarkMode()}const t=saveToLocal.get("aside-status");void 0!==t&&("hide"===t?document.documentElement.classList.add("hide-aside"):document.documentElement.classList.remove("hide-aside"));const o=saveToLocal.get("global-font-size");void 0!==o&&document.documentElement.style.setProperty("--global-font-size",o+"px")}()</script><link rel="stylesheet" href="/css/valine.css"><link rel="stylesheet" href="/css/scorll.css"><style>.app-refresh{position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease}.app-refresh-wrap{display:flex;color:#fff;height:100%;align-items:center;justify-content:center}.app-refresh-wrap a{color:#fff;text-decoration:underline;cursor:pointer}</style><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/rss.xml" title="Codgi的小屋" type="application/atom+xml"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">正在加载中....</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://s3.ax1x.com/2020/12/27/r5aEwj.jpg" onerror='onerror=null,src="/img/friend_404.gif"' alt="avatar"></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">19</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i> <span>文章</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i> <span>友链</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment-dots"></i> <span>留言</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-keyboard"></i> <span>说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i> <span>关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image:url(https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Codgi的小屋</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i> <span>Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i> <span>首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i> <span>文章</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i> <span>友链</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment-dots"></i> <span>留言</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-keyboard"></i> <span>说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i> <span>关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">入手一台Raspberry Pi 4B</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2020-08-10T03:27:45.242Z" title="Created 2020-08-10 11:27:45">2020-08-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-01-14T13:22:37.648Z" title="Updated 2021-01-14 21:22:37">2021-01-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">607</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>2min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>近段时间想学学Linux方面的东西，但是Windows上的WSL我觉得虽然方便，但是用着没有单独Linux<br>那么畅快，所以入手Raspberry Pi来拿玩，但愿不要太快就吃灰了。</p><p>这篇记录下Raspberry Pi的踩坑记录（md）<br><a id="more"></a></p><h1 id="Raspberry-Pi"><a href="#Raspberry-Pi" class="headerlink" title="Raspberry Pi"></a>Raspberry Pi</h1><h2 id="踩坑记录"><a href="#踩坑记录" class="headerlink" title="踩坑记录"></a>踩坑记录</h2><h3 id="1-HDMI无信号"><a href="#1-HDMI无信号" class="headerlink" title="1. HDMI无信号"></a><strong>1. HDMI无信号</strong></h3><p>这个是个神奇的问题，我在把镜像文件（Ubuntu 18）烧录至SD卡后，插入Raspberry Pi后，连接上键盘和HDMI（输出至一台1920x1080的限制小电视）然后一直无信号。<br>我以为是系统出了问题，重新试了好多次都一直是无信号，最终在YouTube上看到了解决方案：</p><ul><li><strong>Solve</strong><ol><li>将SD卡连至电脑，打开FAT32分区里面的<code>config.txt</code>文件</li><li>更改/添加 以下配置：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#强制使用HDMI输出</span><br><span class="line">hdmi_force_hotplug&#x3D;1</span><br><span class="line"></span><br><span class="line">#HDMI信号增强</span><br><span class="line">config_hdmi_boost&#x3D;4</span><br><span class="line"></span><br><span class="line">#HDMI输出适配于计算机显示器</span><br><span class="line">hdmi_group&#x3D;2</span><br><span class="line"></span><br><span class="line">#HDMI输出的分辨率及刷新频率</span><br><span class="line">hdmi_mode&#x3D;9</span><br><span class="line"></span><br><span class="line">#禁止树莓派检测显示器分辨率，直接使用配置文件中制定的分辨率输出</span><br><span class="line">hdmi_ignore_edid&#x3D;0xa5000080</span><br><span class="line"></span><br><span class="line">#禁止黑边</span><br><span class="line">disable_overscan&#x3D;1</span><br><span class="line"></span><br><span class="line">附：常用的分辨率配置</span><br><span class="line">hdmi_mode&#x3D;4    640x480   60Hz</span><br><span class="line">hdmi_mode&#x3D;9    800x600   60Hz</span><br><span class="line">hdmi_mode&#x3D;16   1024x768  60Hz</span><br><span class="line">hdmi_mode&#x3D;23   1280x768  60Hz</span><br><span class="line">hdmi_mode&#x3D;32   1280x960  60Hz</span><br><span class="line">hdmi_mode&#x3D;35   1280x1024 60Hz</span><br><span class="line">hdmi_mode&#x3D;39   1360x768  60Hz</span><br><span class="line">hdmi_mode&#x3D;47   1440x900  60Hz</span><br><span class="line">hdmi_mode&#x3D;81   1366x768  60Hz</span><br><span class="line">hdmi_mode&#x3D;82   1920x1080 60Hz</span><br></pre></td></tr></table></figure></li><li>保存、重新插上Raspberry Pi，重新开机，点亮</li></ol></li></ul><h3 id="2-Wifi"><a href="#2-Wifi" class="headerlink" title="2. Wifi"></a><strong>2. Wifi</strong></h3><p>我当前使用的<code>NetworkManager</code>，因为是很久前配置的开机自动连接wifi，导致忘了是如何设置得了，今天补一下</p><h4 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h4><ul><li><p>NetworkManager定期扫描Wi-Fi网络,使用<code>nmcli dev wifi list</code>可以查看最近一次的扫描结果</p></li><li><p>若无法看见要连接的SSID，可以使用<code>nmcli dev wifi rescan</code>，然后再重新<code>list</code>一下</p></li></ul><h5 id="连接Wifi"><a href="#连接Wifi" class="headerlink" title="连接Wifi"></a>连接Wifi</h5><p>使用<code>sudo nmcli dev wifi connect &#39;SSID&#39; password &#39;mypassword&#39;</code></p><h5 id="检查设备状态"><a href="#检查设备状态" class="headerlink" title="检查设备状态"></a>检查设备状态</h5><p>使用<code>nmcli dev status</code></p><h5 id="检查活动连接"><a href="#检查活动连接" class="headerlink" title="检查活动连接"></a>检查活动连接</h5><p>使用<code>nmcli con show --active</code></p><h5 id="删除已建立的连接"><a href="#删除已建立的连接" class="headerlink" title="删除已建立的连接"></a>删除已建立的连接</h5><p>如果需要删除已建立的连接，则可以指定连接UUID或连接名称，要获得连接UUID或用户名，运行<code>nmcli con</code>显示</p><ul><li>使用连接名称连接删除<br><code>sudo nmcli con del &#39;SSID&#39;</code></li><li>使用连接UUID删除连接<br><code>sudo nmcli con del xxx-xxx-xxx-xxx-xxx</code></li></ul><h5 id="还可以使用下面的命令来关闭或打开以前的连接"><a href="#还可以使用下面的命令来关闭或打开以前的连接" class="headerlink" title="还可以使用下面的命令来关闭或打开以前的连接"></a>还可以使用下面的命令来关闭或打开以前的连接</h5><p><code>nmcli con down</code><br><code>nmcli con up</code></p><hr><h2 id="网络连接问题"><a href="#网络连接问题" class="headerlink" title="网络连接问题"></a>网络连接问题</h2><p><del>待更新，不断补齐，咕咕咕</del></p></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">作者:</span> <span class="post-copyright-info"><a href="mailto:undefined">Codgi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接:</span> <span class="post-copyright-info"><a href="https://codgi.xin/article/RaspberryPi/">https://codgi.xin/article/RaspberryPi/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明:</span> <span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" data-sites="facebook,twitter,wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload='this.media="all"'><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/article/lights/"><img class="prev-cover" src="http://api.dujin.org/bing/1366.php" onerror='onerror=null,src="/img/404.jpg"' alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">笔记本屏幕亮度问题</div></div></a></div><div class="next-post pull-right"><a href="/article/tcp/"><img class="next-cover" src="https://uploadbeta.com/api/pictures/random/" onerror='onerror=null,src="/img/404.jpg"' alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">我也要和TCP握手</div></div></a></div></nav><hr><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i> <span>Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Raspberry-Pi"><span class="toc-number">1.</span> <span class="toc-text">Raspberry Pi</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95"><span class="toc-number">1.1.</span> <span class="toc-text">踩坑记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-HDMI%E6%97%A0%E4%BF%A1%E5%8F%B7"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. HDMI无信号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Wifi"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. Wifi</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9A"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">常用命令：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5Wifi"><span class="toc-number">1.1.2.1.1.</span> <span class="toc-text">连接Wifi</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E8%AE%BE%E5%A4%87%E7%8A%B6%E6%80%81"><span class="toc-number">1.1.2.1.2.</span> <span class="toc-text">检查设备状态</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E6%B4%BB%E5%8A%A8%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.1.2.1.3.</span> <span class="toc-text">检查活动连接</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%B7%B2%E5%BB%BA%E7%AB%8B%E7%9A%84%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.1.2.1.4.</span> <span class="toc-text">删除已建立的连接</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%98%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%91%BD%E4%BB%A4%E6%9D%A5%E5%85%B3%E9%97%AD%E6%88%96%E6%89%93%E5%BC%80%E4%BB%A5%E5%89%8D%E7%9A%84%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.1.2.1.5.</span> <span class="toc-text">还可以使用下面的命令来关闭或打开以前的连接</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98"><span class="toc-number">1.2.</span> <span class="toc-text">网络连接问题</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image:url(https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Codgi</div><div class="framework-info"><span>框架</span> <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题</span> <a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">近朱者赤，近墨者黑</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"></div></div></div><hr><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn(){"object"==typeof pangu?pangu.spacingElementById("content-inner"):getScript("https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js").then(()=>{pangu.spacingElementById("content-inner")})}function panguInit(){panguFn()}document.addEventListener("DOMContentLoaded",panguInit)</script><script src="/js/ribbon_flow.js"></script><script src="/js/search/local-search.js"></script><script>var preloader={endLoading:()=>{document.body.style.overflow="auto",document.getElementById("loading-box").classList.add("loaded")},initLoading:()=>{document.body.style.overflow="",document.getElementById("loading-box").classList.remove("loaded")}};window.addEventListener("load",()=>{preloader.endLoading()})</script><div class="js-pjax"><script>if(window.MathJax)MathJax.startup.document.state(0),MathJax.texReset(),MathJax.typeset();else{window.MathJax={loader:{source:{"[tex]/amsCd":"[tex]/amscd"}},tex:{inlineMath:[["$","$"],["\\(","\\)"]],tags:"ams"},options:{renderActions:{findScript:[10,t=>{for(const e of document.querySelectorAll('script[type^="math/tex"]')){const a=!!e.type.match(/; *mode=display/),n=new t.options.MathItem(e.textContent,t.inputJax[0],a),s=document.createTextNode("");e.parentNode.replaceChild(s,e),n.start={node:s,delim:"",n:0},n.end={node:s,delim:"",n:0},t.math.push(n)}},""],addClass:[200,()=>{document.querySelectorAll("mjx-container:not([display='true']").forEach(t=>{const e=t.parentNode;e.classList.contains("has-jax")||e.classList.add("mathjax-overflow")})},"",!1]}}};const t=document.createElement("script");t.src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",t.id="MathJax-script",t.async=!0,document.head.appendChild(t)}</script><script>function loadValine(){function e(){let e={el:"#vcomment",appId:"fSipnKUUx9pDvucDj2zXz2Lr-gzGzoHsz",appKey:"loVqUAMHEGRtBPd193jLQfCr",placeholder:"说点什么呗~~~ (支持MarkDown语法)",avatar:"monsterid",meta:"nick,mail,link".split(","),pageSize:"10",lang:"zh-cn",recordIP:!0,serverURLs:"",emojiCDN:"",emojiMaps:"",enableQQ:!1,path:window.location.pathname};e.requiredFields="nick,mail".split(","),new Valine(e)}"function"==typeof Valine?e():getScript("https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js").then(e)}{function loadOtherComment(){loadValine()}btf.loadComment(document.getElementById("vcomment"),loadValine)}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="app-refresh" id="app-refresh"><div class="app-refresh-wrap"><label>✨ 网站已更新最新版本 👉</label> <a href="javascript:void(0)" onclick="location.reload(!0)">点击刷新</a></div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"点击刷新",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",(function(){showNotification()})),window.addEventListener("load",(function(){navigator.serviceWorker.register("/sw.js")})))</script><script defer id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script></div></body></html>
+<!DOCTYPE html><html lang="zh-Hans" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>入手一台Raspberry Pi 4B | Codgi的小屋</title><meta name="author" content="Codgi"><meta name="copyright" content="Codgi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="近段时间想学学Linux方面的东西，但是Windows上的WSL我觉得虽然方便，但是用着没有单独Linux那么畅快，所以入手Raspberry Pi来拿玩，但愿不要太快就吃灰了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="入手一台Raspberry Pi 4B">
+<meta property="og:url" content="https://codgi.xin/article/RaspberryPi/index.html">
+<meta property="og:site_name" content="Codgi的小屋">
+<meta property="og:description" content="近段时间想学学Linux方面的东西，但是Windows上的WSL我觉得虽然方便，但是用着没有单独Linux那么畅快，所以入手Raspberry Pi来拿玩，但愿不要太快就吃灰了。">
+<meta property="og:locale">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png">
+<meta property="article:published_time" content="2020-08-10T03:27:45.242Z">
+<meta property="article:modified_time" content="2021-01-14T13:22:37.648Z">
+<meta property="article:author" content="Codgi">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://codgi.xin/article/RaspberryPi/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/manifest.json"/><link rel="apple-touch-icon" sizes="180x180" href="/image/pwa/16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/image/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/image/pwa/16.png"/><link rel="mask-icon" href="/image/pwa/16.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-01-14 21:22:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = '2'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}const fontSizeVal = saveToLocal.get('global-font-size')
+if (fontSizeVal !== undefined) {
+  document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+}})()</script><link rel="stylesheet" href="/css/valine.css"><link rel="stylesheet" href="/css/scorll.css"><style type="text/css">.app-refresh{position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease}.app-refresh-wrap{display:flex;color:#fff;height:100%;align-items:center;justify-content:center}.app-refresh-wrap a{color:#fff;text-decoration:underline;cursor:pointer}</style><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/rss.xml" title="Codgi的小屋" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">正在加载中....</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://s3.ax1x.com/2020/12/27/r5aEwj.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">19</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">10</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-keyboard"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Codgi的小屋</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/message/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-keyboard"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">入手一台Raspberry Pi 4B</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2020-08-10T03:27:45.242Z" title="Created 2020-08-10 11:27:45">2020-08-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-01-14T13:22:37.648Z" title="Updated 2021-01-14 21:22:37">2021-01-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">607</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>2min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>近段时间想学学Linux方面的东西，但是Windows上的WSL我觉得虽然方便，但是用着没有单独Linux<br>那么畅快，所以入手Raspberry Pi来拿玩，但愿不要太快就吃灰了。  </p>
+<p>这篇记录下Raspberry Pi的踩坑记录（md）<br><a id="more"></a></p>
+<h1 id="Raspberry-Pi"><a href="#Raspberry-Pi" class="headerlink" title="Raspberry Pi"></a>Raspberry Pi</h1><h2 id="踩坑记录"><a href="#踩坑记录" class="headerlink" title="踩坑记录"></a>踩坑记录</h2><h3 id="1-HDMI无信号"><a href="#1-HDMI无信号" class="headerlink" title="1. HDMI无信号"></a><strong>1. HDMI无信号</strong></h3><p>这个是个神奇的问题，我在把镜像文件（Ubuntu 18）烧录至SD卡后，插入Raspberry Pi后，连接上键盘和HDMI（输出至一台1920x1080的限制小电视）然后一直无信号。<br>我以为是系统出了问题，重新试了好多次都一直是无信号，最终在YouTube上看到了解决方案：  </p>
+<ul>
+<li><strong>Solve</strong>  <ol>
+<li>将SD卡连至电脑，打开FAT32分区里面的<code>config.txt</code>文件  </li>
+<li>更改/添加 以下配置： <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#强制使用HDMI输出</span><br><span class="line">hdmi_force_hotplug&#x3D;1</span><br><span class="line"></span><br><span class="line">#HDMI信号增强</span><br><span class="line">config_hdmi_boost&#x3D;4</span><br><span class="line"></span><br><span class="line">#HDMI输出适配于计算机显示器</span><br><span class="line">hdmi_group&#x3D;2</span><br><span class="line"></span><br><span class="line">#HDMI输出的分辨率及刷新频率</span><br><span class="line">hdmi_mode&#x3D;9</span><br><span class="line"></span><br><span class="line">#禁止树莓派检测显示器分辨率，直接使用配置文件中制定的分辨率输出</span><br><span class="line">hdmi_ignore_edid&#x3D;0xa5000080</span><br><span class="line"></span><br><span class="line">#禁止黑边</span><br><span class="line">disable_overscan&#x3D;1</span><br><span class="line"></span><br><span class="line">附：常用的分辨率配置</span><br><span class="line">hdmi_mode&#x3D;4    640x480   60Hz</span><br><span class="line">hdmi_mode&#x3D;9    800x600   60Hz</span><br><span class="line">hdmi_mode&#x3D;16   1024x768  60Hz</span><br><span class="line">hdmi_mode&#x3D;23   1280x768  60Hz</span><br><span class="line">hdmi_mode&#x3D;32   1280x960  60Hz</span><br><span class="line">hdmi_mode&#x3D;35   1280x1024 60Hz</span><br><span class="line">hdmi_mode&#x3D;39   1360x768  60Hz</span><br><span class="line">hdmi_mode&#x3D;47   1440x900  60Hz</span><br><span class="line">hdmi_mode&#x3D;81   1366x768  60Hz</span><br><span class="line">hdmi_mode&#x3D;82   1920x1080 60Hz</span><br></pre></td></tr></table></figure></li>
+<li>保存、重新插上Raspberry Pi，重新开机，点亮</li>
+</ol>
+</li>
+</ul>
+<h3 id="2-Wifi"><a href="#2-Wifi" class="headerlink" title="2. Wifi"></a><strong>2. Wifi</strong></h3><p>我当前使用的<code>NetworkManager</code>，因为是很久前配置的开机自动连接wifi，导致忘了是如何设置得了，今天补一下  </p>
+<h4 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h4><ul>
+<li><p>NetworkManager定期扫描Wi-Fi网络,使用<code>nmcli dev wifi list</code>可以查看最近一次的扫描结果</p>
+</li>
+<li><p>若无法看见要连接的SSID，可以使用<code>nmcli dev wifi rescan</code>，然后再重新<code>list</code>一下</p>
+</li>
+</ul>
+<h5 id="连接Wifi"><a href="#连接Wifi" class="headerlink" title="连接Wifi"></a>连接Wifi</h5><p>使用<code>sudo nmcli dev wifi connect &#39;SSID&#39; password &#39;mypassword&#39;</code></p>
+<h5 id="检查设备状态"><a href="#检查设备状态" class="headerlink" title="检查设备状态"></a>检查设备状态</h5><p>使用<code>nmcli dev status</code></p>
+<h5 id="检查活动连接"><a href="#检查活动连接" class="headerlink" title="检查活动连接"></a>检查活动连接</h5><p>使用<code>nmcli con show --active</code></p>
+<h5 id="删除已建立的连接"><a href="#删除已建立的连接" class="headerlink" title="删除已建立的连接"></a>删除已建立的连接</h5><p>如果需要删除已建立的连接，则可以指定连接UUID或连接名称，要获得连接UUID或用户名，运行<code>nmcli con</code>显示</p>
+<ul>
+<li>使用连接名称连接删除<br><code>sudo nmcli con del &#39;SSID&#39;</code></li>
+<li>使用连接UUID删除连接<br><code>sudo nmcli con del xxx-xxx-xxx-xxx-xxx</code></li>
+</ul>
+<h5 id="还可以使用下面的命令来关闭或打开以前的连接"><a href="#还可以使用下面的命令来关闭或打开以前的连接" class="headerlink" title="还可以使用下面的命令来关闭或打开以前的连接"></a>还可以使用下面的命令来关闭或打开以前的连接</h5><p><code>nmcli con down</code><br><code>nmcli con up</code></p>
+<hr>
+<h2 id="网络连接问题"><a href="#网络连接问题" class="headerlink" title="网络连接问题"></a>网络连接问题</h2><p><del>待更新，不断补齐，咕咕咕</del></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Codgi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://codgi.xin/article/RaspberryPi/">https://codgi.xin/article/RaspberryPi/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png" data-sites="facebook,twitter,wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/article/lights/"><img class="prev-cover" src="https://uploadbeta.com/api/pictures/random/" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">笔记本屏幕亮度问题</div></div></a></div><div class="next-post pull-right"><a href="/article/tcp/"><img class="next-cover" src="https://uploadbeta.com/api/pictures/random/" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">我也要和TCP握手</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Raspberry-Pi"><span class="toc-number">1.</span> <span class="toc-text">Raspberry Pi</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95"><span class="toc-number">1.1.</span> <span class="toc-text">踩坑记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-HDMI%E6%97%A0%E4%BF%A1%E5%8F%B7"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. HDMI无信号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Wifi"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. Wifi</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%9A"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">常用命令：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5Wifi"><span class="toc-number">1.1.2.1.1.</span> <span class="toc-text">连接Wifi</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E8%AE%BE%E5%A4%87%E7%8A%B6%E6%80%81"><span class="toc-number">1.1.2.1.2.</span> <span class="toc-text">检查设备状态</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E6%B4%BB%E5%8A%A8%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.1.2.1.3.</span> <span class="toc-text">检查活动连接</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%B7%B2%E5%BB%BA%E7%AB%8B%E7%9A%84%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.1.2.1.4.</span> <span class="toc-text">删除已建立的连接</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%98%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%91%BD%E4%BB%A4%E6%9D%A5%E5%85%B3%E9%97%AD%E6%88%96%E6%89%93%E5%BC%80%E4%BB%A5%E5%89%8D%E7%9A%84%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.1.2.1.5.</span> <span class="toc-text">还可以使用下面的命令来关闭或打开以前的连接</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98"><span class="toc-number">1.2.</span> <span class="toc-text">网络连接问题</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url(https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Codgi</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">近朱者赤，近墨者黑</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.spacingElementById('content-inner')
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.spacingElementById('content-inner')
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/ribbon_flow.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        addClass: [200,() => {
+          document.querySelectorAll('mjx-container:not([display=\'true\']').forEach( node => {
+            const target = node.parentNode
+            if (!target.classList.contains('has-jax')) {
+              target.classList.add('mathjax-overflow')
+            }
+          })
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'fSipnKUUx9pDvucDj2zXz2Lr-gzGzoHsz',
+      appKey: 'loVqUAMHEGRtBPd193jLQfCr',
+      placeholder: '说点什么呗~~~ (支持MarkDown语法)',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-cn',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ 网站已更新最新版本 👉</label> <a href="javascript:void(0)" onclick="location.reload(true)">点击刷新</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"点击刷新",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script></div></body></html>
