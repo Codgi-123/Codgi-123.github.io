@@ -6,7 +6,7 @@
   <link href="https://codgi.xin/rss.xml" rel="self"/>
   
   <link href="https://codgi.xin/"/>
-  <updated>2021-01-14T13:11:48.801Z</updated>
+  <updated>2021-01-16T05:27:23.890Z</updated>
   <id>https://codgi.xin/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Github上Fork后与原仓库同步</title>
+    <link href="https://codgi.xin/article/update_fork/"/>
+    <id>https://codgi.xin/article/update_fork/</id>
+    <published>2021-01-16T04:13:10.588Z</published>
+    <updated>2021-01-16T05:27:23.890Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="有一个很省事的方法"><a href="#有一个很省事的方法" class="headerlink" title="有一个很省事的方法"></a>有一个很省事的方法</h2><blockquote><p>如果你 <code>Fork</code> 后对原仓库的代码修改量不大，基本上只修改了一些参数的话<br>直接前往 <code>Fork</code> 仓库的 <code>Settings</code> 页面，翻到最下面然后<code>Delete</code> 吧<br>然后重新 <code>Fork</code> 一遍原仓库，在新 <code>Fork</code> 的仓库中重新修改</p></blockquote><p>不得不说这种方法很省事，但是这种方法应该作为最后的选择，而不是首选</p><h2 id="Merge"><a href="#Merge" class="headerlink" title="Merge"></a>Merge</h2><p>上次和小伙伴门一起写项目的时候也经常要用到 <code>Merge</code> ，不怎么熟练那就多练练(手动摸稽稽</p><ul><li><p>Step1. 进入本地仓库的目录<br>这里指的<strong>本地仓库</strong>是在电脑上 <code>Clone</code> 的自己的仓库</p></li><li><p>Step2. 查看远程仓库的路径<br>使用 <code>git remote -v</code>，一般来说只有两条记录  </p><div align=center><img src="https://s3.ax1x.com/2021/01/16/sDkw9g.png" ></div>  <p>说明当前的仓库没有设置 <code>upstream</code> (上游代码库)，设置一次 <code>upstream</code> 后就无需重复设置了</p></li><li><p>Step3. 设置上游代码库<br>使用 <code>git remote add upstream 上游代码库</code>  </p><p>这个命令执行后，没有任何返回信息  </p><div align=center><img src="https://s3.ax1x.com/2021/01/16/sDkvgH.png" width="84%"></div><p>所以再次执行命令 <code>git remote -v</code> 检查是否成功  </p><div align=center><img src="https://s3.ax1x.com/2021/01/16/sDkL4O.png " width="84%"></div></li><li><p>Step4. 检查本地是否有未提交的修改<br>使用 <code>git status</code> 查看  </p><blockquote><p>如果有，则把本地的有效修改推送到你的github仓库<br><code>git add .</code> 或者 <code>git add filename</code><br><code>git commit -m &quot;update&quot;</code><br><code>git push origin master</code><br>最后再执行一次 <code>git status</code> 检查本地已无未提交的修改</p></blockquote></li><li><p>Step5. 抓取原仓库的更新<br>使用 <code>git fetch upstream</code>  </p><div align=center><img src="https://s3.ax1x.com/2021/01/16/sDArGD.png " width="84%"></div></li><li><p>Step6. 切换到主分支<br><em>注: 我所使用的仓库主分支名为</em> <code>main</code>  </p><p>使用 <code>git checkout main</code></p><div align=center><img src="https://s3.ax1x.com/2021/01/16/sDESWF.png " width="84%"></div></li><li><p>Step7. 合并远程的主分支<br>使用 <code>git merge upstream/main</code>  </p><div align=center><img src="https://s3.ax1x.com/2021/01/16/sDEiLR.png " width="84%"></div><ol><li><p><strong>如果没有自动合并出错则进入Step8</strong></p></li><li><p>这里看到输出信息里面有自动合并出错，需要手动 <code>Merge</code> 的文件在倒数第二行指出<br>使用 VS Code 打开本地仓库的该文件就能看到手动 <code>Merge</code> 选择，选择你想要的方式：<br><code>使用传入方案</code>(也就是原仓库的代码) 或者是 <code>保留本地方案</code>(这个就是你修改的东西)<br>我们肯定就选择第二种了</p><ul><li>合并冲突后需要 <code>git add .</code> 或者 <code>git add 手动合并的文件名</code></li><li><code>git commit -m &quot;merged&quot;</code></li></ul></li></ol></li></ul><ul><li>Step8. 推送本地代码到自己的云端仓库<br>使用<code>git push</code></li></ul><p>已经就解决了 <code>fork</code> 的仓库和原仓库版本不一致的问题啦</p>]]></content>
+    
+    
+    <summary type="html">前段时间在Github上Fork了一个项目，然后最近看的时候原仓库已经有很多新的提交了，Fork的仓库却没有Pull下来，找了找如何让它与原仓库同步的方法</summary>
+    
+    
+    
+    
+    <category term="Git" scheme="https://codgi.xin/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>Navicat Premium 15 破解激活</title>
