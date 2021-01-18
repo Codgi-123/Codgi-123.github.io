@@ -6,7 +6,7 @@
   <link href="https://codgi.xin/rss.xml" rel="self"/>
   
   <link href="https://codgi.xin/"/>
-  <updated>2021-01-16T05:27:23.890Z</updated>
+  <updated>2021-01-18T08:13:04.164Z</updated>
   <id>https://codgi.xin/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VMware中虚拟机共享主机SSR</title>
+    <link href="https://codgi.xin/article/vm_ssr/"/>
+    <id>https://codgi.xin/article/vm_ssr/</id>
+    <published>2021-01-18T07:51:02.367Z</published>
+    <updated>2021-01-18T08:13:04.164Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>所使用环境:</p><ol><li>VMware Workstation 16 Pro 版本号：16.1.0 build-17198959</li><li>Ubuntu 18.04.1</li><li>ShadowsocksR for Windows 5.1.6</li><li>Win10 20H2</li></ol></blockquote><h2 id="step1-找到虚拟机与主机网络的连接方式"><a class="markdownIt-Anchor" href="#step1-找到虚拟机与主机网络的连接方式"></a> Step1. 找到虚拟机与主机网络的连接方式</h2><p>记住是 <code>桥接</code> or <code>NAT</code>，鼠标放到右下角看下即可，如图：</p><div align=center><img src="https://s3.ax1x.com/2021/01/18/s6tJOJ.png" width="40%"></div><h2 id="step2-设置ssr本地代理"><a class="markdownIt-Anchor" href="#step2-设置ssr本地代理"></a> Step2. 设置SSR本地代理</h2><p>如下图，本地端口选择没有占用的，并记住端口号：</p><div align=center><img src="https://s3.ax1x.com/2021/01/18/s6UTds.png" width="45%"></div><h2 id="step3-查看vmware的ipv4地址"><a class="markdownIt-Anchor" href="#step3-查看vmware的ipv4地址"></a> Step3. 查看VMware的IPv4地址</h2><p>在主机上执行 <code>ipconfig</code> 找到 <code>VMware Network Adapter VMnet1</code> 或者 <code>VMware Network Adapter VMnet8</code></p><ul><li>如果是 <code>桥接模式</code> ： 找到 <code>VMware Network Adapter VMnet1</code> 下的IPv4地址，如图：</li></ul><div align=center><img src="https://s3.ax1x.com/2021/01/18/s6wnPI.png" width="55%"></div><ul><li>如果是 <code>NAT</code> ：找到 <code>VMware Network Adapter VMnet8</code> 下的IPv4地址，如图：</li></ul><div align=center><img src="https://s3.ax1x.com/2021/01/18/s6wNin.png" width="55%"></div><h2 id="step4-在虚拟机中设置代理"><a class="markdownIt-Anchor" href="#step4-在虚拟机中设置代理"></a> Step4. 在虚拟机中设置代理</h2><p>转到 <code>设置</code> — <code>网络</code> — <code>网络代理</code>，将方式设置为手动，代理地址填写对应网络模式下的IPv4地址。</p><ul><li>使用 <code>NAT</code> 方式，填写 <code>VMware Network Adapter VMnet8</code> 下的IPv4地址</li><li>使用 <code>桥接</code> 方式，填写 <code>VMware Network Adapter VMnet1</code> 下的IPv4地址</li></ul><p>如下图：</p><div align=center><img src="https://s3.ax1x.com/2021/01/18/s60ElV.png" width="45%"></div><h2 id="然后就可以愉快地在虚拟机中使用主机的ssr了~"><a class="markdownIt-Anchor" href="#然后就可以愉快地在虚拟机中使用主机的ssr了~"></a> 然后就可以愉快地在虚拟机中使用主机的SSR了~</h2><p>见下图：</p><div align=center><img src="https://s3.ax1x.com/2021/01/18/s60Wkj.png" width="85%"></div>]]></content>
+    
+    
+    <summary type="html">在虚拟机下也想使用墙外的网络和谷歌，毕竟体验好一点，简单地设置了一下</summary>
+    
+    
+    
+    
+    <category term="VMware" scheme="https://codgi.xin/tags/VMware/"/>
+    
+  </entry>
   
   <entry>
     <title>Github上Fork后与原仓库同步</title>
@@ -114,7 +133,7 @@
     <link href="https://codgi.xin/article/addiction/"/>
     <id>https://codgi.xin/article/addiction/</id>
     <published>2020-11-28T03:21:48.946Z</published>
-    <updated>2021-01-16T06:11:34.856Z</updated>
+    <updated>2021-01-18T08:15:49.900Z</updated>
     
     <content type="html"><![CDATA[<p>资本主义精心设计的成瘾模型，接很久以前的一篇<a href="https://codgi.xin/article/games/">文章</a>，对以前写的内容的追加思考</p><a id="more"></a><h2 id="前提引入"><a href="#前提引入" class="headerlink" title="前提引入"></a>前提引入</h2><p>你是这样的人吗，每次上网搜索东西时，总被其他热点标题吸引，转而忘了正事，走在路上时，总是不自觉拿起手机刷来刷去，但到底为什么要拿出手机，又在刷什么，你自己也不清楚。老早地躺进被窝，把熟悉的应用、热点新闻、朋友圈全都刷了个遍，还是没睡着，最后打开了网易云  </p><h2 id="初步原因"><a href="#初步原因" class="headerlink" title="初步原因"></a>初步原因</h2><p>不止是你一个人拥有这样的困扰，在今天，拥有电子设备的现代人几乎都有这样的困扰，是我们网络成瘾了吗？是我们自制力不够吗？问题不一定出在你身上，有可能在你每天都在用的设备和程序上</p><h2 id="下拉刷新，上划永无止境"><a href="#下拉刷新，上划永无止境" class="headerlink" title="下拉刷新，上划永无止境"></a>下拉刷新，上划永无止境</h2><p>为什么你手机里常用的很多APP，无一不采用类似的设计，为什么好像所有APP都想给你推送信息，获取你的隐私信息；为什么<code>点赞</code> <code>收藏</code> <code>分享</code> <code>转发</code>，会成为这些APP内最常见的按钮，为什么越来越多的视频平台总是自动播放下一支视频或者循环播放，并且你不按停止，他能一直这样</p><h2 id="引入参考书籍《上瘾》"><a href="#引入参考书籍《上瘾》" class="headerlink" title="引入参考书籍《上瘾》"></a>引入参考书籍《上瘾》</h2><p>早在2017年电子设备增长浪潮时，当人们还在热议如何戒掉手机瘾时，一本畅销书正在创业者、产品、和广告人中间风靡，书中用一个简化的模型指导你如何打造一款让人欲罢不能的爆款上瘾产品。<br>这本书在某些行业甚至被奉为“圣经”，名字就叫做《上瘾》</p><blockquote><p>《上瘾》：让用户养成使用习惯的四大产品<br>【美】尼尔·埃亚尔、【美】瑞安·胡佛  </p></blockquote><h2 id="上瘾模型"><a href="#上瘾模型" class="headerlink" title="上瘾模型"></a>上瘾模型</h2><p>书中这个简化的模型被称为上瘾模型，通过<code>触发-&gt;行动-&gt;酬赏(多变)-&gt;投入</code>，简简单单四个步骤，就能让用户在不知不觉中，养成使用习惯，甚至上瘾。<br>据统计，人类几乎一半的日常活动都受制于习惯。 </p><p><strong>论文引入:</strong><br>根据一篇名为《基底神经节在习惯形成中的作用》的论文，神经系统学家认为，人脑中存在一种负责无意识行为的基底神经节，很多无意识产生的条件反射都会被存储下来，这样，我们的大脑就能腾出更多精力关注其他的事情。而所谓习惯，就是大脑遇到类似环境时，所产生的无意识行为：  </p><ol><li>不自觉的口头禅</li><li>脱口而出的脏话</li><li>紧张时的挠头  </li><li>有推送就想看看</li><li>走路或者乘车时拿起手机</li></ol><hr><h3 id="第一阶段——触发"><a href="#第一阶段——触发" class="headerlink" title="第一阶段——触发"></a>第一阶段——触发</h3><p><strong>所有包括但不限于上述提及的习惯，都是由某个触发开始</strong><br>生活中的日常触发大多都是随机性的，而产品的触发却都潜藏在信息中，暗示着用户：你接下来要做什么<br>你想打开这个应用，因为APP上的小红点触发了你的强迫症；你想打开朋友圈或者空间，因为你又能看到新的动态了；你想下拉刷新一下信息流，因为下次刷新总能刷到自己喜欢的内容。<br>触发的形式繁多，早期的滴滴打车和拼多多的补贴还有花呗返现免单就是<code>付费型触发</code>。你在社交网络上收到的关注、点赞、收藏，甚至拼多多的拼单就是<code>人际型触发</code>。信息推送也算是一种触发，不过，这些都来自外部，而和情绪相关的内部触发更为有效。而且负面情绪的触发更为强大，他们一旦产生，你们就不自觉想要打压。<br>无聊时你想看看新闻热榜，孤独时你想刷刷朋友圈，压力大时你想刷抖音。这种头疼医头，脚疼医脚的方式，虽然不能在根本上解决问题，但总能以最快的速度和最低的成本让你解决当下的负面感受，久而久之就变成一种可以存储在基底神经节中的<strong>习惯</strong></p><hr><h3 id="第二阶段——行动"><a href="#第二阶段——行动" class="headerlink" title="第二阶段——行动"></a>第二阶段——行动</h3><p>但要你正在行动起来，成为他们的用户，乃至长期用户，甚至付费用户，光有这简简单单的触发还远远不够  </p><blockquote><p>斯坦福大学说服技术研究实验室主任Dr. BJ Fogg建立了一个行为模型——Fogg Behavior Model，用 <code>B=MAP</code>表示</p></blockquote><p>即<code>行为=动机(M)*能力(A)*触发器(P)</code>，也就是说要一个人完成特定的行为，除了需要触发器以外，还需要他有这个动机以及能力。<br>驱使人们采取行动的核心动机就三种：感觉、预期和归属感。每一种都包含两个方面：</p><ol><li>感觉：追求快乐、逃避痛苦</li><li>预期：追求希望、逃避恐惧</li><li>归属：追求认同、逃避排斥</li></ol><p>但有触发，有动机也不见得能激发人们行动，因为能力也至关重要，如果一个人没有能力做到某件事，按照Fogg的行为模型，你只有两种办法：</p><ol><li>给他这项能力，比如培训或者工具</li><li>简化目标、降低预期<h4 id="举例子"><a href="#举例子" class="headerlink" title="举例子"></a>举例子</h4>博客兴起的时代，不是每个人都能动辄千八百字，为了能让更多地人都能加入写博客，我们限定每次最多只能写140个字符，于是Twitter起来了，微博诞生了。<br>评论虽然很有意思，但是写字很麻烦，没事，只要你觉得好，轻轻一点给个赞；收藏也简化，轻轻一点加入收藏夹；转发也简化，轻轻一点多种渠道都能转发。<br>以至现在的App哪个不加这啊是哪个基础功能就等于站在了用户的对立面。<br>到后来翻页也成为了一种阻碍，因为你已经没有耐心等待加载，没关系，现在我们有瀑布流，只需要轻轻滑，翻到底后会自动加载更多；搜索框不知道搜索什么，没关系，我帮你推荐点热搜，都是你最感兴趣的。<br>总结一下，通过这个模型，如果你没有时间，一切都将为你变得更简单、更快、更方便；如果你没有钱，我们可以免费；就算你没有脑力和体力，这一切我们也帮你简化了。<br>还有一部分来自人脑自身的机制或者缺陷，比如人脑一次性只能处理很少的信息，所以我们这几年看到的UI或者其他设计都在逐渐简化，简化到即使没有文字描述，光是看见这个图标就能知道它大概的作用，这种做法在其中潜藏精准而明确的指示，只为触发你的某一个行动。还有研究表明，人眼比较容易被深色、暖色吸引，所以很多App的迭代更新，在自身图标上做得也越来越契合这个方面。</li></ol><hr><h3 id="第三阶段——酬赏"><a href="#第三阶段——酬赏" class="headerlink" title="第三阶段——酬赏"></a>第三阶段——酬赏</h3><p><strong>当你行动起来，你就能获得来自产品的酬赏，并且是多变的酬赏</strong><br>在上瘾模型中，这些酬赏被分为三种：<code>社交酬赏</code>、<code>猎物酬赏</code>、<code>自我酬赏</code>。  </p><h4 id="猎物酬赏"><a href="#猎物酬赏" class="headerlink" title="猎物酬赏"></a>猎物酬赏</h4><p>猎物酬赏是人们最容易意识到的部分：金钱奖励、资源回馈、以及获得更多信息。<br>当你阅读自己感兴趣的新闻时，再刷一下，总有一条让你更感兴趣的；为了搜索一张图片，你能看到无数类似或者让人更舒爽的图片；看完一个视频，下面还有更有意思的，而社交酬赏实际上在互联网世界中更有分量，在他人的点赞和评论中，你能获得足够多的肯定，激发你得创作、分享、参与的欲望，如果你在应用中获得某种成就感或者掌控感，那将是一种自我酬赏。  </p><blockquote><p>心理学家Skinner在上世纪五十年代开展了这样一项研究：<br>把鸽子放进笼子里，鸽子慢慢发现：啄一下按钮就能获得食物。然后做一点小小的改动：鸽子啄一下按钮只能间歇地获得食物，这时候鸽子啄按钮地频率会加快<br>早年与这个实验最接近的应该是赌博中的老虎机</p></blockquote><p>而现在，像不像打开软件或者刷新信息列表，却不知道在看什么的我们</p><hr><h3 id="第四阶段——投入"><a href="#第四阶段——投入" class="headerlink" title="第四阶段——投入"></a>第四阶段——投入</h3><p><strong>触发、行动、酬赏之后，还需要让人们投入到产品中，才算是完成了整个上瘾模型的回路</strong><br>你在该产品上积累的各种价值、发布的照片或视频、积累的关注或点赞以及知名度、基于产品所学会的知识技能等，都将是你无法离开的原因。然后，下一个触发，还在继续。<br>在整本书中，只有不到10页聊到了道德操控，他提出了一个直接的问题：上瘾模型算不算精神控制？<br>现在：经过这么久的讲解，你说呢？</p><hr><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><ol><li>让我们回到B=MAP,这个重要的模型公式，首先：<br>触发是不可改变的，无数的触发器已经安装或者正在被安装进你的生活，其次在很多产品中，他们往往把能力的权重放在动机之前，所以如果你有一点点意识到：某些行为对你来讲是负面的，你可以想办法降低能力值掌控提高能力的值，来减少行动的可能性。  </li></ol><ul><li>比如，手机打开锁屏后，第一屏根本没有那些应用</li><li>关掉没有必要的消息推送</li></ul><p>但是这些措施仍然是头疼医头，脚疼医脚，不能完全解决问题，基本持续最多一周后就会恢复原样，这也是著名的<code>王境泽定律</code>。  </p><p>人的所有行动都有他的目的，如果这个目的不属于你，那就属于你的DNA，你的动物脑，DNA需要生存、延续，所以我们的动物脑有好的一面，也会有他懒惰、贪婪的一面  </p><p><strong>但最根本的问题是，你，我是说：你打算把你的时间和注意力，花在哪里</strong></p><blockquote><p>我们生活在物的时代，我们根据他们的节奏和不断替代的现实而生活着 —— 让·鲍德里亚《消费社会》</p></blockquote>]]></content>
     
@@ -123,6 +142,8 @@
     
     
     
+    
+    <category term="思考" scheme="https://codgi.xin/tags/%E6%80%9D%E8%80%83/"/>
     
   </entry>
   
