@@ -6,7 +6,7 @@
   <link href="https://codgi.xin/rss.xml" rel="self"/>
   
   <link href="https://codgi.xin/"/>
-  <updated>2021-01-25T12:07:01.611Z</updated>
+  <updated>2021-01-18T14:01:28.903Z</updated>
   <id>https://codgi.xin/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="https://codgi.xin/article/test/"/>
-    <id>https://codgi.xin/article/test/</id>
-    <published>2021-01-25T11:53:04.183Z</published>
-    <updated>2021-01-25T12:07:01.611Z</updated>
-    
-    <content type="html"><![CDATA[<ol><li>balabala…</li><li>balabala… <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">code...</span><br></pre></td></tr></table></figure></li><li>balabala…</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;ol&gt;
-&lt;li&gt;balabala…&lt;/li&gt;
-&lt;li&gt;balabala… &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;code...&lt;/span&gt;&lt;br&gt;</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>VMware中虚拟机共享主机SSR</title>
@@ -383,6 +361,23 @@
     
     
     <summary type="html">《开始营业》</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://codgi.xin/article/hello-world/"/>
+    <id>https://codgi.xin/article/hello-world/</id>
+    <published>2020-02-15T02:35:47.481Z</published>
+    <updated>2021-01-14T13:10:29.880Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hello World！<br>这是我建立的第一个静态博客鸭，以前听说过hexo，但迫于自身太菜所以就没有去搭建，现在放假闲下来了就搭建好了这个简单的博客<br>想查看更多信息可以阅读完这篇文章，也可以去 <a href="https://codgi.xin/about">关于Codgi的小屋</a> 查看<br><a id="more"></a><br><strong>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check #%&amp;^%#%&amp;$%&amp;^$ <del>好的我知道了</del></strong></p><h2 id="想说的话"><a href="#想说的话" class="headerlink" title="想说的话"></a>想说的话</h2><h3 id="1-原来从来没有用过markdown-（我就是个菜鸡√）"><a href="#1-原来从来没有用过markdown-（我就是个菜鸡√）" class="headerlink" title="1.原来从来没有用过markdown （我就是个菜鸡√）"></a>1.原来从来没有用过markdown （我就是个菜鸡√）</h3><p>了解markdown，以及熟悉他的用法可能还需要一段时间，也有许多工具可以将Word格式的文章转换为markdown，但我觉得这样好像失去了直接这样书写的乐趣，反正需要用到的语法也不是太多，也有帮助文档可以看，索性以后都用markdow来写我的文章咯~ <del>段落的换行…两个以上空格加回车</del></p><p>oh~逐渐熟练，以后文章里面应该会包含代码以及公式，只有先预习一下了</p><p>More info：<a href="https://blog.csdn.net/witnessai1/article/details/52551362">语法手册</a></p><h3 id="2-hexo我也是第一次接触它"><a href="#2-hexo我也是第一次接触它" class="headerlink" title="2.hexo我也是第一次接触它"></a>2.hexo我也是第一次接触它</h3><p>这里是hexo的官方网站：<a href="https://hexo.io/">Hexo</a></p><p>简单来说，Hexo是一个快速、简洁、高效的博客框架，使用Markdown（或者其他渲染引擎）解析文章，并利用主题生成静态网页</p><p>这里是Hexo的官方中文文档：<a href="https://hexo.io/zh-cn/docs/index.html">文档|Hexo</a></p><h3 id="这是我的第二个网站"><a href="#这是我的第二个网站" class="headerlink" title="这是我的第二个网站"></a>这是我的第二个网站</h3><p>第一个使用的是Wordpress，里面的主题始终让我不满意，有很多时候需要去改主题的源代码，想加一个插件又怕跟主题不能兼容<br>百般无奈，新开一个，这里就记录学习、思考，那边记录生活，琐事。<del>免得把狗骗进来杀</del>  </p><h3 id="More："><a href="#More：" class="headerlink" title="More："></a>More：</h3><p>  博客所使用的主题：<a href="https://github.com/Molunerfinn/hexo-theme-melody">Melody</a><br>  主题作者的博客：<a href="https://molunerfinn.com/">MARKSZ</a><br>  同时感谢<a href="https://sheey.moe">Sheey</a>的帮助和解答</p>]]></content>
+    
+    
+    <summary type="html">这是我建立的第一个静态博客鸭，以前听说过hexo，但迫于自身太菜所以就没有去搭建，现在放假闲下来了就搭建好了这个简单的博客</summary>
     
     
     
