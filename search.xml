@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>test</title>
+      <link href="article/test/"/>
+      <url>article/test/</url>
+      
+        <content type="html"><![CDATA[<ol><li>balabala…</li><li>balabala… <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">code...</span><br></pre></td></tr></table></figure></li><li>balabala…</li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>VMware中虚拟机共享主机SSR</title>
       <link href="article/vm_ssr/"/>
       <url>article/vm_ssr/</url>
