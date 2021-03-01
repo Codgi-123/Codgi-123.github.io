@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>2021第二学期开学啦</title>
+      <link href="article/2020_2semester/"/>
+      <url>article/2020_2semester/</url>
+      
+        <content type="html"><![CDATA[<h2 id="寒假"><a href="#寒假" class="headerlink" title="寒假"></a>寒假</h2><ul><li>没空出去旅行</li><li>修了修 Wenote</li><li>学了点数据库</li><li>收到了 Sheey 送的 戴森球(玩不动了</li><li>画饼</li></ul><h2 id="新学期"><a href="#新学期" class="headerlink" title="新学期"></a>新学期</h2><ul><li>带上了原来的键盘</li><li>来学校前一天就感冒</li><li>为树莓派装上了桌面环境，获得在寝室使用电脑的机会</li><li>新买了蚊帐，睡眠质量大幅提升</li></ul><h2 id="FLAG"><a href="#FLAG" class="headerlink" title="FLAG"></a>FLAG</h2><h3 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h3><ul><li>学完数据库</li><li>学完Java后端</li><li>入门前端</li></ul><h3 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h3><ul><li>好好保养脸(？男的就不能保养🐎</li><li>每天记账</li><li>培养下理财</li><li>还有就是能获得更多的奖吧</li></ul><h2 id="Else"><a href="#Else" class="headerlink" title="Else"></a>Else</h2><p>比起上一个寒假来说这次的假期让人感觉快了不少，上学期期末已经是撑到极限了，再让我多读一天的书我可能就要死了，回家好好休息了把个月，回学校前有种让我归心似箭的感觉<br>在家里天天早上睡到11点钟，也算是对上一学期基本上每天早起的弥补了<br>在学校的作息前几天已经调整好了，晚上早点休息，第二天才有足够的精神<br>学校这边的天气要冷很多，还没有家里的烤火炉，天天脚都被冻得很冷，出去也要吹冷风……<br>“明天就开始”、“不能这么一天天颓废” 这些话题能够聊整个大学<br>溜啦，无限火力很快也没啦，Codgi要去和课程对线啦</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 随记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>VMware中虚拟机共享主机SSR</title>
       <link href="article/vm_ssr/"/>
       <url>article/vm_ssr/</url>

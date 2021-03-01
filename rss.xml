@@ -6,7 +6,7 @@
   <link href="https://codgi.xin/rss.xml" rel="self"/>
   
   <link href="https://codgi.xin/"/>
-  <updated>2021-01-18T14:01:28.903Z</updated>
+  <updated>2021-03-01T13:49:26.788Z</updated>
   <id>https://codgi.xin/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2021第二学期开学啦</title>
+    <link href="https://codgi.xin/article/2020_2semester/"/>
+    <id>https://codgi.xin/article/2020_2semester/</id>
+    <published>2021-03-01T06:49:48.515Z</published>
+    <updated>2021-03-01T13:49:26.788Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="寒假"><a href="#寒假" class="headerlink" title="寒假"></a>寒假</h2><ul><li>没空出去旅行</li><li>修了修 Wenote</li><li>学了点数据库</li><li>收到了 Sheey 送的 戴森球(玩不动了</li><li>画饼</li></ul><h2 id="新学期"><a href="#新学期" class="headerlink" title="新学期"></a>新学期</h2><ul><li>带上了原来的键盘</li><li>来学校前一天就感冒</li><li>为树莓派装上了桌面环境，获得在寝室使用电脑的机会</li><li>新买了蚊帐，睡眠质量大幅提升</li></ul><h2 id="FLAG"><a href="#FLAG" class="headerlink" title="FLAG"></a>FLAG</h2><h3 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h3><ul><li>学完数据库</li><li>学完Java后端</li><li>入门前端</li></ul><h3 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h3><ul><li>好好保养脸(？男的就不能保养🐎</li><li>每天记账</li><li>培养下理财</li><li>还有就是能获得更多的奖吧</li></ul><h2 id="Else"><a href="#Else" class="headerlink" title="Else"></a>Else</h2><p>比起上一个寒假来说这次的假期让人感觉快了不少，上学期期末已经是撑到极限了，再让我多读一天的书我可能就要死了，回家好好休息了把个月，回学校前有种让我归心似箭的感觉<br>在家里天天早上睡到11点钟，也算是对上一学期基本上每天早起的弥补了<br>在学校的作息前几天已经调整好了，晚上早点休息，第二天才有足够的精神<br>学校这边的天气要冷很多，还没有家里的烤火炉，天天脚都被冻得很冷，出去也要吹冷风……<br>“明天就开始”、“不能这么一天天颓废” 这些话题能够聊整个大学<br>溜啦，无限火力很快也没啦，Codgi要去和课程对线啦</p>]]></content>
+    
+    
+    <summary type="html">去年疫情的影响已经没有那么大了，在一个正常的寒假之后就回到学校准备上课了。</summary>
+    
+    
+    
+    
+    <category term="随记" scheme="https://codgi.xin/tags/%E9%9A%8F%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>VMware中虚拟机共享主机SSR</title>
@@ -361,23 +380,6 @@
     
     
     <summary type="html">《开始营业》</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://codgi.xin/article/hello-world/"/>
-    <id>https://codgi.xin/article/hello-world/</id>
-    <published>2020-02-15T02:35:47.481Z</published>
-    <updated>2021-01-14T13:10:29.880Z</updated>
-    
-    <content type="html"><![CDATA[<p>Hello World！<br>这是我建立的第一个静态博客鸭，以前听说过hexo，但迫于自身太菜所以就没有去搭建，现在放假闲下来了就搭建好了这个简单的博客<br>想查看更多信息可以阅读完这篇文章，也可以去 <a href="https://codgi.xin/about">关于Codgi的小屋</a> 查看<br><a id="more"></a><br><strong>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check #%&amp;^%#%&amp;$%&amp;^$ <del>好的我知道了</del></strong></p><h2 id="想说的话"><a href="#想说的话" class="headerlink" title="想说的话"></a>想说的话</h2><h3 id="1-原来从来没有用过markdown-（我就是个菜鸡√）"><a href="#1-原来从来没有用过markdown-（我就是个菜鸡√）" class="headerlink" title="1.原来从来没有用过markdown （我就是个菜鸡√）"></a>1.原来从来没有用过markdown （我就是个菜鸡√）</h3><p>了解markdown，以及熟悉他的用法可能还需要一段时间，也有许多工具可以将Word格式的文章转换为markdown，但我觉得这样好像失去了直接这样书写的乐趣，反正需要用到的语法也不是太多，也有帮助文档可以看，索性以后都用markdow来写我的文章咯~ <del>段落的换行…两个以上空格加回车</del></p><p>oh~逐渐熟练，以后文章里面应该会包含代码以及公式，只有先预习一下了</p><p>More info：<a href="https://blog.csdn.net/witnessai1/article/details/52551362">语法手册</a></p><h3 id="2-hexo我也是第一次接触它"><a href="#2-hexo我也是第一次接触它" class="headerlink" title="2.hexo我也是第一次接触它"></a>2.hexo我也是第一次接触它</h3><p>这里是hexo的官方网站：<a href="https://hexo.io/">Hexo</a></p><p>简单来说，Hexo是一个快速、简洁、高效的博客框架，使用Markdown（或者其他渲染引擎）解析文章，并利用主题生成静态网页</p><p>这里是Hexo的官方中文文档：<a href="https://hexo.io/zh-cn/docs/index.html">文档|Hexo</a></p><h3 id="这是我的第二个网站"><a href="#这是我的第二个网站" class="headerlink" title="这是我的第二个网站"></a>这是我的第二个网站</h3><p>第一个使用的是Wordpress，里面的主题始终让我不满意，有很多时候需要去改主题的源代码，想加一个插件又怕跟主题不能兼容<br>百般无奈，新开一个，这里就记录学习、思考，那边记录生活，琐事。<del>免得把狗骗进来杀</del>  </p><h3 id="More："><a href="#More：" class="headerlink" title="More："></a>More：</h3><p>  博客所使用的主题：<a href="https://github.com/Molunerfinn/hexo-theme-melody">Melody</a><br>  主题作者的博客：<a href="https://molunerfinn.com/">MARKSZ</a><br>  同时感谢<a href="https://sheey.moe">Sheey</a>的帮助和解答</p>]]></content>
-    
-    
-    <summary type="html">这是我建立的第一个静态博客鸭，以前听说过hexo，但迫于自身太菜所以就没有去搭建，现在放假闲下来了就搭建好了这个简单的博客</summary>
     
     
     
